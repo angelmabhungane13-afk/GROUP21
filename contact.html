@@ -1,22 +1,38 @@
-
 <!DOCTYPE html>
 <html>
-<head><title>Modules - CS Department</title></head>
+<head><title>Contact Us</title></head>
 <body>
     <nav>
         <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="modules.html">Modules</a> | <a href="contact.html">Contact</a>
     </nav>
-    <h1>Modules Offered</h1>
-    <table border="1" cellpadding="10">
-        <tr><th>Module Code</th><th>Module Name</th><th>Semester</th><th>Credits</th><th>Lecturer</th></tr>
-        <tr><td>SCSC012</td><td>Introduction to Programming</td><td>1</td><td>12</td><td>Dr. Pholosho</td></tr>
-        <tr><td>SMTH012</td><td>Mathematics for CS</td><td>1</td><td>12</td><td>Ms. Ronewa</td></tr>
-        <tr><td>SCSC022</td><td>Data Structures</td><td>2</td><td>16</td><td>Mr. Kamogelo</td></tr>
-        <tr><td>SCSC021</td><td>Database Systems</td><td>2</td><td>16</td><td>Dr. Molefe</td></tr>
-    </table>
-    <h3>Useful Resources</h3>
-    <a href="https://www.w3schools.com/html/" target="_blank">Learn HTML - W3Schools</a><br>
-    <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+    <h1>Contact Us</h1>
+    <form>
+        <h3>Personal Information</h3>
+        First Name: <input type="text" name="fname" required><br><br>
+        Surname: <input type="text" name="surname" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Student No: <input type="text" name="studentno" required><br><br>
+
+        <h3>Enquiry Type</h3>
+        <select name="enquiry">
+            <option>General enquiry</option>
+            <option>Programme information</option>
+            <option>Registration</option>
+            <option>Technical support</option>
+            <option>Other</option>
+        </select><br><br>
+
+        <h3>Message</h3>
+        <textarea rows="5" cols="40" placeholder="Type your message here"></textarea><br><br>
+
+        <h3>Preferred Contact Method</h3>
+        <input type="radio" name="contact"> Email
+        <input type="radio" name="contact"> Phone
+        <input type="radio" name="contact"> SMS <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
     <footer><p>&copy; 2026 Group 21</p></footer>
 </body>
 </html>
